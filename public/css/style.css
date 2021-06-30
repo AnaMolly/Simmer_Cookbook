@@ -1,0 +1,35 @@
+h3 {
+    color:orangered;
+}
+
+li {
+    color:rgb(73, 41, 14);
+    font-weight: bold;
+    font-family: 'Caveat', cursive;
+}
+
+#navbar-container {
+    background-image: linear-gradient(to bottom right, rgb(73, 41, 14), rgb(172, 172, 169));
+    color: #fff;
+    padding-top: 2em;
+}
+
+#hero-container {
+    padding: 5em;
+}
+
+
+#app-title {
+    font-size: 10em;
+    margin-top: 0.25em;
+    font-family: 'Caveat', cursive;
+    color: orangered;
+}
+
+.blockquote-footer {
+    font-size: larger;
+}
+
+.mb-0 {
+    font-size: xx-large;
+}
