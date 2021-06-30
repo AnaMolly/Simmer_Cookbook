@@ -12,8 +12,7 @@ Cookbook.init(
             autoIncrement:true
         },
         recipe_quantity: {
-            type: DataTypes.NUMBER,
-            autoIncrement:true
+            type: DataTypes.INTEGER,
         },
         user_id: {
             type: DataTypes.INTEGER,

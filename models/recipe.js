@@ -3,7 +3,7 @@ const sequelize = require('../config/connection');
 
 class Recipe extends Model {};
 
-Recipe.Init(
+Recipe.Init( // MAKE INIT LOWERCASE !!!!!!!!!!!!!!!!!!!!!!!!!!!!
     {
         id: {
             type: DataTypes.INTEGER,
