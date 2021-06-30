@@ -3,7 +3,7 @@ const sequelize = require('../config/connection');
 
 class Recipe extends Model {};
 
-Recipe.Init( // MAKE INIT LOWERCASE !!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Recipe.init( 
     {
         id: {
             type: DataTypes.INTEGER,
@@ -52,3 +52,5 @@ Recipe.Init( // MAKE INIT LOWERCASE !!!!!!!!!!!!!!!!!!!!!!!!!!!!
         modelName: 'recipe',
     },
 )
+
+module.exports = Recipe;
