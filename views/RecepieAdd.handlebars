@@ -1,0 +1,43 @@
+<div class="Recepie-Page">
+    
+   
+
+    {{!-- <h3>Please select an image to enter</h3> --}}
+    {{!-- <textarea style="resize: none;" class="imageEntered" name="image"></textarea> --}}
+
+    <div class="container">
+        <h1>Please select an image to enter</h1>
+        <form action="/upload" method="POST" enctype="multipart/form-data">
+            <h1>Add a personal recepie</h1>
+
+                <h3>Please enter a tile for your new recepie</h3>
+                <textarea style="resize: none;" class="title" name="title"></textarea>
+
+                <h3>Please enter the ingredients </h3>
+                <textarea style="resize: none;" class="ingredints" name="ingredints"></textarea>
+
+                <h3>Please enter the instructions to creare this</h3>
+                <textarea style="resize: none;" class="instructions" name="instructions"></textarea>
+
+            <div class="file-field input-field">
+                <div class="btn grey">
+                    <span>File</span>
+                    <input name="myImage" type="file">
+                </div>
+                <div class="file-path-wrapper">
+                <input class="file-path validate" type="text">
+                </div>
+            <button type="submit" id="imageButton" class="btn">Submit</button>
+            </div>
+            {{!-- <button type="submit" id="imageButton" class="btn">Submit</button> --}}
+        </form>
+        <br>
+       
+
+        
+    </div>
+
+</div>
+
+{{!-- <script src="/Javascript/inputData.js"></script> --}}
+{{!-- <button type="submit" id="imageButton" class="btn">Submit</button> --}}
