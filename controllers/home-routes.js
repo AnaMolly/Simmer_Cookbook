@@ -22,6 +22,16 @@ router.get('/', async (req, res) => {
   }
 });
 
+router.get('/addRecipes', async (req, res) => {
+  try {
+
+    res.render('addRecipe',{
+    loggedIn: req.session.loggedIn});
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
 
 router.get('/login', async (req, res) => {
   try {
