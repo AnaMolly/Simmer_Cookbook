@@ -31,4 +31,5 @@ Recipe.belongsTo(Cookbook, {
     onDelete: 'cascade'
 });
 
-module.exports = { User, Recipe, Cookbook}; 
+
+module.exports = { User, Recipe, Cookbook};
