@@ -31,4 +31,4 @@ Recipe.belongsTo(Cookbook, {
     onDelete: 'cascade'
 });
 
-modul.exports = { User, Recipe, Cookbook}; // FIX TYPOO!!
+module.exports = { User, Recipe, Cookbook}; 
