@@ -1,9 +1,28 @@
 const router = require('express').Router();
+const {Recipe,User}=require('../models')
+// router.get('/', async(req,res) =>{
+//     res.render('HomePage');
+// })
+
+// router.get('/addReciepie', async(req,res) =>{
+//     res.render('RecepieAdd');
+// })
+
+// router.get('/ViewRecepie', async(req,res) =>{
+//     res.render('CookBook');
+// })
 
 router.get('/', async (req, res) => {
+
   try {
 
-    res.render('homepage',{
+    const recipeData = await Recipe.findAll({
+      include:{model:User}
+    })
+
+    const recipes = recipeData.map(recipe =>recipe.get({plain:true}))
+    
+    res.render('homepage',{recipes,
     loggedIn: req.session.loggedIn});
   } catch (err) {
     res.status(500).json(err);
