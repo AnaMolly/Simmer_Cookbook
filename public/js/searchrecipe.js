@@ -65,15 +65,15 @@ function getIndRecipe(searchValue){
         console.log(data)
     
         indRecipe.append(
-            `<div style="display:flex; flex-direction:column; align-items:center; margin:30px"> <h4 class='individual-recipe' style='font-weight:200; font-size:40px; text-align:center; padding:30px'>${data.title}</h4> <img src='https://spoonacular.com/recipeImages/${data.image}' style='max-width:200px;max-height:200px'></div>`
+            `<div style="display:flex; flex-direction:column; align-items:center; margin:30px"> <h4 id='recipe-title' style='font-weight:200; font-size:40px; text-align:center; padding:30px'>${data.title}</h4> <img class="recipe-id"src='https://spoonacular.com/recipeImages/${data.image}' style='max-width:200px;max-height:200px'></div>`
         )
         
-        indRecipe.append(`<h3> Instructions </h3>  <p> ${data.instructions}</p>`)
+        indRecipe.append(`<h3> Instructions: </h3>  <p id="recipe-instructions" style="padding: 0px 50px"> ${data.instructions}</p> <br>`)
         indRecipe.append(`<h3> Ingredients: </h3>`)
        
             for(let i=0;i<30;i++){
                 indRecipe.append(
-                    `  <p style="font-size: 20px"> ${data.extendedIngredients[i].original}</p>`
+                    `  <p id="recipe-ingredients" style="font-size: 20px"> ${data.extendedIngredients[i].original}</p>`
                 )
             } 
         
@@ -87,12 +87,40 @@ function getIndRecipe(searchValue){
     });
 }
     
+const addRecipeData = async (event) => {
+    event.preventDefault();
+  
+    // Collect values from the login form
+    const ingredients = document.querySelector('#recipe-ingredients').value.trim();
+    const instructions = document.querySelector('#recipe-instructions').value.trim();
+    const image = document.querySelector('#recipe-img').value.trim();
+  
+    if (username && password) {
+      // Send a POST request to the API endpoint
+      const response = await fetch('/api/recipes/searchRecipe', {
+        method: 'POST',
+        body: JSON.stringify({ username, password }),
+        headers: { 'Content-Type': 'application/json' },
+      });
+  
+      if (response.ok) {
+        // If successful, redirect the browser to the profile page
+        document.location.replace('/');
+      } else {
+        alert(response.statusText);
+      }
+    }
+  };
 
 
+//   document
+//   .querySelector('.login-form')
+//   .addEventListener('submit', loginFormHandler);
 
 searchBut.addEventListener("click", function(event){
     event.preventDefault()
     recipesListEl.children().remove()
     getRecipes()
 })
+
 
