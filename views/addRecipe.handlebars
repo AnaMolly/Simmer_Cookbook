@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body style="display: flex; flex-direction:column; align-items: center;">
+    <div class="row justify-content-center searchbar" style="margin: 0px;">
+    <div class="form-group search-div" style="display: flex; flex-direction: column; justify-content: center;">
+        <p class="label" style="font-size: 25px; font-weight: 200; color: black; padding-top: 50px;">Search for a recipe:</p>
+        <input type="text" class="form-control input-value" id="dishSearched" placeholder="Enter a dish here">
+        <a href="#" class="btn btn-primary search-button" >Search</a>
+    </div>
+    </div>
+      <div class="card" style="margin: 40px; font-size: 25px; font-weight: 200; color: black;">
+        <div class="card-body all-recipes">
+          <div id="search-results" style="display: flex;">
+   
+          </div>
+        </div>
+      </div>
+      <div class="card text-center" style="font-size: 25px; font-weight: 200; color: black;">
+        <div class="card-body" id="ind-recipe">
+          
+          
+        </div>
+        <a href="#" class="btn btn-primary">Add recipe</a>
+      </div>
+</body>
+<script rel="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script rel="text/javascript" src="/js/addrecipe.js" > </script>
+
+</html>
