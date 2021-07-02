@@ -1,6 +1,6 @@
     <div class="row justify-content-center " id='hero-container'>
         <div class="col-4 offset-1">
-            <img src="clipart3773520.png" width='250' height='250'  alt="...">
+            <img src="/Assets/clipart3773520.png" width='250' height='250'  alt="...">
         </div>
         <div class="col-4" id='app-title-container'>
             <h1 id='app-title'>Simmer</h1>
@@ -33,64 +33,25 @@
     <div class="row justify-content-center">
         <div class="col-5">
             <div class="row row-cols-2">
-                <div class="col"><img src="6H5A0297.crisp_.jpg" alt="Girl in a jacket" width="350" height="250"></div>
-                <div class="col"><img src="nachos.jpg" alt="Girl in a jacket" width="350" height="250"></div>
-                <div class="col"><img src="salmonRoll.jpg" alt="Girl in a jacket" width="350" height="250"></div>
-                <div class="col"><img src="strawberryCheesecake.jpg" alt="Girl in a jacket" width="350" height="250"></div>
-                <div class="col"><img src="chickenParm.jpg" alt="Girl in a jacket" width="350" height="250"></div>
-                <div class="col"><img src="tuscan-salmon-recipe.jpg" alt="Girl in a jacket" width="350" height="250"></div>
+                <div class="col"><img src="/Assets/6H5A0297.crisp_.jpg" alt="" width="350" height="250"></div>
+                <div class="col"><img src="/Assets/nachos.jpg" alt="" width="350" height="250"></div>
+                <div class="col"><img src="/Assets/salmonRoll.jpg" alt="" width="350" height="250"></div>
+                <div class="col"><img src="/Assets/strawberryCheesecake.jpg" alt="" width="350" height="250"></div>
+                <div class="col"><img src="/Assets/chickenParm.jpg" alt="" width="350" height="250"></div>
+                <div class="col"><img src="/Assets/tuscan-salmon-recipe.jpg" alt="" width="350" height="250"></div>
               </div>
         </div>
         <div class="col-3">
           <ul>
+              {{#each recipes}}
               <li>
                 <blockquote class="blockquote text-center">
-                    <p class="mb-0">Chicken Parm</p>
-                    <footer class="blockquote-footer">ahmad <!--USERNAME GOES HERE  --><cite title="Source Title"><!--LEAVE BLANK HERE  --></cite></footer>
+                    <p class="mb-0">{{name}}</p>
+                    <footer class="blockquote-footer">{{User.username}}<!--USERNAME GOES HERE  --><cite title="Source Title"><!--LEAVE BLANK HERE  --></cite></footer>
                 </blockquote>
               </li>
+              {{/each}}
 
-              <li>
-                <blockquote class="blockquote text-center">
-                    <p class="mb-0">Strawberry Cheesecake</p>
-                    <footer class="blockquote-footer">abuzar <!--USERNAME GOES HERE  --><cite title="Source Title"><!--LEAVE BLANK HERE --></cite></footer>
-                </blockquote>
-              </li>
-
-              <li>
-                <blockquote class="blockquote text-center">
-                    <p class="mb-0">buffalo chicken nachos</p>
-                    <footer class="blockquote-footer">analia <!--USERNAME GOES HERE  --><cite title="Source Title"><!--LEAVE BLANK HERE  --></cite></footer>
-                </blockquote>
-              </li>
-
-              <li>
-                <blockquote class="blockquote text-center">
-                    <p class="mb-0">Creamy Tuscan Salmon</p>
-                    <footer class="blockquote-footer">jugraj <!--USERNAME GOES HERE  --><cite title="Source Title"><!--LEAVE BLANK HERE  --></cite></footer>
-                </blockquote>
-              </li>
-           
-              <li>
-                <blockquote class="blockquote text-center">
-                    <p class="mb-0">Strawberry Cheesecake</p>
-                    <footer class="blockquote-footer">abuzar <!--USERNAME GOES HERE  --><cite title="Source Title"><!--LEAVE BLANK HERE --></cite></footer>
-                </blockquote>
-              </li>
-
-              <li>
-                <blockquote class="blockquote text-center">
-                    <p class="mb-0">buffalo chicken nachos</p>
-                    <footer class="blockquote-footer">analia <!-- USERNAME GOES HERE --><cite title="Source Title"><!--LEAVE BLANK HERE  --></cite></footer>
-                </blockquote>
-              </li>
-
-              <li>
-                <blockquote class="blockquote text-center">
-                    <p class="mb-0">Creamy Tuscan Salmon</p>
-                    <footer class="blockquote-footer">jugraj <!--USERNAME GOES HERE  --><cite title="Source Title"><!--LEAVE BLANK HERE  --></cite></footer>
-                </blockquote>
-              </li>
           </ul>
         </div>
     </div>
