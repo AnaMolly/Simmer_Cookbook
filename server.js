@@ -54,7 +54,21 @@
         res.status(400).json(err);
       }
     })
-  app.engine('handlebars', hbs.engine);
+
+
+  // made this change
+  app.engine("handlebars",exphbs({
+      runtimeOptions: {
+      allowProtoPropertiesByDefault: true,
+      allowProtoMethodsByDefault: true,
+      },
+    })
+  );
+    
+  // app.engine('handlebars', hbs.engine);
+
+
+
   app.set('view engine', 'handlebars');
   app.use(express.json());
   app.use(express.urlencoded({ extended: true }));
