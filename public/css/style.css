@@ -7,6 +7,9 @@ li {
     font-weight: bold;
     font-family: 'Caveat', cursive;
 }
+.link {
+    text-decoration:none;
+}
 
 #navbar-container {
     background-image: linear-gradient(to bottom right, rgb(73, 41, 14), rgb(172, 172, 169));
