@@ -55,6 +55,63 @@
       }
     })
 
+  app.post('/:id', async(req,res)=>{
+    let fileChanged = true;  
+    upload(req,res,async(err) =>{
+        let file1;
+        if(req.file != null){
+          console.log("this one " + req.body.image);
+          file1 = `uploads/${req.file.filename}`
+          fileChanged = true;
+        }
+        else{
+          console.log("this second " + req.body.image);
+          fileChanged = false;
+          file1 = req.body.image;
+        }
+
+      Recipe.update(
+        {
+          // All the fields you can update and the data attached to the request body.
+          name: req.body.name,
+          ingredients: req.body.ingredients,
+          instructions: req.body.instructions,
+          image: file1
+        },
+        {
+          // Gets the books based on the isbn given in the request parameters
+          where: {
+            id: req.params.id,
+          },
+        }
+
+      )
+
+      if(fileChanged === true){
+        res.render('CookBook',{ 
+          fileData:req.body,
+          file: `uploads/${req.file.filename}`
+        })
+      }
+
+      else{
+        console.log("late night codin");
+        console.log("file1" + file1);
+        res.render('CookBook',{ 
+          fileData:req.body,
+          file: file1
+        })
+      }
+
+
+    })
+
+  })
+
+
+
+  
+
 
   // made this change
   app.engine("handlebars",exphbs({
