@@ -1,0 +1,36 @@
+<div class="Recepie-Page">
+    <div class="container">
+        <h1>Please select an image to enter</h1>
+        <form action='/{{RecipeData.id}}' method="POST" enctype="multipart/form-data">
+            <h1>Add a personal recepie</h1>
+        <div class="form-field">
+        <h3>Please enter a tile for your new recepie</h3>
+            <textarea style="resize: none;" class="title" name="name">{{RecipeData.name}}</textarea>
+        </div>
+                    
+
+                <h3>Please enter the ingredients </h3>
+                <textarea style="resize: none;" class="ingredints" name="ingredients">{{RecipeData.ingredients}}</textarea>
+
+                <h3>Please enter the instructions to creare this</h3>
+                <textarea style="resize: none;" class="instructions" name="instructions">{{RecipeData.instructions}}</textarea>
+
+            <div class="file-field input-field">
+                <div class="btn grey">
+                    <span>File</span>
+                    <input id="image1" name="myImage" type="file" >
+                </div>
+                <div class="file-path-wrapper">
+                <input class="file-path validate" type="text" name="image" value={{RecipeData.image}}>
+                </div>
+            {{!-- <button type="submit" id="imageButton" class="btn">Submit</button> --}}
+            </div>
+            <button type="submit" id="imageButton" class="btn">Submit</button>
+        </form>
+        <br>
+       
+
+        
+    </div>
+
+</div>
