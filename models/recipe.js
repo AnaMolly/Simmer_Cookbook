@@ -16,32 +16,25 @@ Recipe.init(
             allowNull: false,
         },
         ingredients: {
-            type: DataTypes.TEXT,
+            type: DataTypes.JSON,
             allowNull: false,
+            
         },
         instructions: {
             type: DataTypes.TEXT,
             allowNull: false,
         },
         image: {
-            type: DataTypes.STRING, //TAKE IMAGE LINK AND ADD THE VALUE AS A STRING
+            type: DataTypes.STRING, 
             allowNull: true,
         },
-        cookbook_id: {
+        user_id:{
             type: DataTypes.INTEGER,
-            allowNull: false,
-            references: {
-                model: 'cookbook',
-                key: 'id',
-            },
-        },
-        user_id: {
-            type: DataTypes.INTEGER,
-            allowNull: false,
+            allowNull: true,
             references: {
                 model: 'user',
                 key: 'id',
-            },
+            }
         },
     },
     {

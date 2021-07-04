@@ -1,8 +1,5 @@
 const router = require('express').Router();
 const {Recipe,User}=require('../models')
-router.get('/', async(req,res) =>{
-    res.render('HomePage');
-})
 
 router.get('/addReciepie', async(req,res) =>{
     res.render('RecepieAdd');
@@ -57,6 +54,17 @@ router.get('/logout', (req, res) => {
 
   res.render('login');
 
+});
+
+
+router.get('/cookbook', async (req, res) => {
+  try {
+
+    res.render('cookbook',{
+    loggedIn: req.session.loggedIn});
+  } catch (err) {
+    res.status(500).json(err);
+  }
 });
 
 router.get('/UserCookBook', async(req,res) =>{

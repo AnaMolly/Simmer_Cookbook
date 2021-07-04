@@ -11,8 +11,13 @@ Cookbook.init(
             primaryKey:true,
             autoIncrement:true
         },
-        recipe_quantity: {
+        recipe_id: {
             type: DataTypes.INTEGER,
+            allowNull: false,
+            references: {
+                model: 'recipe',
+                key: 'id',
+            },
         },
         user_id: {
             type: DataTypes.INTEGER,

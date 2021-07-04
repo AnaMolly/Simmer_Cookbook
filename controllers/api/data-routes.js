@@ -3,7 +3,6 @@ const {Recipe} = require('../../models');
 
 
 router.post('/', async (req, res) => {
-    console.log("tiosaddiljf");
     console.log(req.body);
     try {
       const userData = await Recipe.create(req.body);
