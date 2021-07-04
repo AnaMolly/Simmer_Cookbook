@@ -10,7 +10,7 @@ router.post('/searchRecipe', async (req, res) => {
       ingredients: req.body.ingredient,
       instructions: req.body.instructions,
       image: req.body.image,
-      user_id: 1,
+      user_id: req.session.user_id,
     });
 console.log(recipeData)
     req.session.save(() => {

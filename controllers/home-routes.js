@@ -57,10 +57,10 @@ router.get('/logout', (req, res) => {
 });
 
 
-router.get('/cookbook', async (req, res) => {
+router.get('/DisplayUserCookbook', async (req, res) => {
   try {
 
-    res.render('cookbook',{
+    res.render('DisplayUserCookbook',{
     loggedIn: req.session.loggedIn});
   } catch (err) {
     res.status(500).json(err);

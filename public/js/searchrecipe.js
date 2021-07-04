@@ -109,7 +109,7 @@ const addRecipeData = async () => {
       });
   
       if (response.ok) {
-        document.location.replace('/cookbook');
+        document.location.replace('/DisplayUserCookbook');
       } else {
         alert(response.statusText);
       }
