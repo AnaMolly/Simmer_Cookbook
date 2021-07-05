@@ -1,0 +1,30 @@
+[
+    {
+        "name": "Chicken Parm",
+        "ingredients": "Chicken breast, parmesan cheese, vegatable oil, salt, pepper, canned tomatoes, panko breadcrumbs, flour",
+        "instructions": "Preheat oven to 450 Degrees F, season chicken breast with salt and paper, coat chicken breast with breadcrumbs using eggs, cook chicken with oil until golden brown and sprinkle parmesan cheese",
+        "image": "public/Assets/chickenParm.jpg",
+        "user_id": "1"
+    },
+    {
+        "name": "Deluxe Pizza",
+        "ingredients": "pizza sauce, mozzerella cheese, pepperoni, green peppers, mushrooms, pizza dough",
+        "instructions": "roll out dough to 14 inch circle, spread pizza sauce, and evenly spread pizza toppings, place inside preheated 500 degrees F oven, cook until golden",
+        "image": "public/Assets/deluxePizza.PNG",
+        "user_id": "2"
+    },
+    {
+        "name": "Grill Cheese Sandwich",
+        "ingredients": "two slices of sour doe bread, garlic spread, 2 slices of havarti cheese",
+        "instructions": "Take two slices of bread and slather garlic spread evenly on each slice, place one bread garlic side face down on medium heat pan and then add your slices of havarti cheese on top and the other slice of bread garlic side up. Flip over sandwich until both sides are golden brown and cheese has melted",
+        "image": "public/Assets/grillCheese.PNG",
+        "user_id": "3"
+    },
+    {
+        "name": "Classic Ceasar Drink",
+        "ingredients": "1 lime wedge, 1 tb celery salt, ice cubes, 1 ounce vodka, 1 dash worcestershire sauce, 1 dash hot pepper sauce (Tobasco), 8 ounces Clamato juice, 1 celery stick",
+        "instructions": "Wet the rim of a cocktail glass with the lime wedge; set aside for garnish. Place celery salt in a small dish, and press the rim of the glass into the salt to coat. Add ice to the glass.Pour vodka, Worcestershire sauce, and hot pepper sauce over the ice; top with tomato-clam juice. Garnish with lime wedge and celery stick. Serve with a straw.",
+        "image": "public/Assets/ceasar.PNG",
+        "user_id": "4"
+    }
+]
