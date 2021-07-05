@@ -89,6 +89,15 @@ router.get('/UserCookBook', async(req,res) =>{
     
 })
 
+router.get('/editRecipe/:id', async (req, res) => {
+  try {
+    const RecipeData = await Recipe.findByPk(req.params.id)
+
+    res.render('editRecipe',{RecipeData});
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
 
 
 
