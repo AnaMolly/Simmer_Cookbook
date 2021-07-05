@@ -2,7 +2,7 @@
   const exphbs = require('express-handlebars');
   const hbs = exphbs.create({});
   const path = require('path');
-  const routes = require('./Controllers');
+  const routes = require('./controllers');
   const {Recipe} = require('./models/');
   const session = require('express-session');
   const sequelize = require('./config/connection');
