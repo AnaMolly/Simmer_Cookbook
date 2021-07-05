@@ -1,6 +1,5 @@
 
 let allNames = $('.allNames');
-console.log("hert");
 
 let previousElement = "";
 
