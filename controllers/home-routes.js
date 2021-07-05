@@ -74,7 +74,10 @@ router.get('/DisplayUserCookbook', async (req, res) => {
 router.get('/UserCookBook', async(req,res) =>{
     try {
         const RecipeData = await Recipe.findAll({
-   
+          // Add Book as a second model to JOIN with
+          where:{
+            user_id:req.session.user_id
+          }
         });
      
         res.render('DisplayUserCookbook',{RecipeData})
