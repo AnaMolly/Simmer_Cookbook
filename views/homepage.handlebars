@@ -1,46 +1,62 @@
-    <div class="row justify-content-center " id='hero-container'>
-        <div class="col-4 offset-1">
-            <img src="/Assets/clipart3773520.png" width='250' height='250'  alt="...">
-        </div>
-        <div class="col-4" id='app-title-container'>
-            <h1 id='app-title'>Simmer</h1>
-        </div>
+    <div style="padding: 0; background-color: #073B3A; display:flex; justify-content:center" >
+    <img src="/Assets/Simmer.png" alt="simmering pot" style="max-width: 1500px;">
     </div>
     <br>
     <div class="row justify-content-center">
-        <div class="col-5">
-          <h3>Recipes</h3>
+        <div class="recipes-home" style="display: flex; justify-content:center; align-items:center;padding:10px; margin:20px ">
+          <div class="col-9" >
+          <h3 style="font-weight: 200; font-size:50px; margin:30px; text-align:center">Recipes</h3>
           <hr/>
-        </div>
-
-        <div class="col-3">
-          <h3>Top Unique Dishes</h3>
-          <hr/>
-        </div>
-    </div>
-
-    <div class="row justify-content-center">
-        <div class="col-5">
-            <div class="row row-cols-2">
-                <div class="col"><img src="/Assets/6H5A0297.crisp_.jpg" alt="" width="350" height="250"></div>
-                <div class="col"><img src="/Assets/nachos.jpg" alt="" width="350" height="250"></div>
-                <div class="col"><img src="/Assets/salmonRoll.jpg" alt="" width="350" height="250"></div>
-                <div class="col"><img src="/Assets/strawberryCheesecake.jpg" alt="" width="350" height="250"></div>
-                <div class="col"><img src="/Assets/chickenParm.jpg" alt="" width="350" height="250"></div>
-                <div class="col"><img src="/Assets/tuscan-salmon-recipe.jpg" alt="" width="350" height="250"></div>
-              </div>
-        </div>
-        <div class="col-3">
-          <ul>
+           <p> <span style="font-family: 'Caveat', cursive; font-size: 60px">Simmer </span>is an app that let's you customize your very own cookbook and tell your friends about it!</p>
+          <p> It's as simple as searching for a recipe you like, and adding it to your cookbook. To make things even better, you can include customized recipes in your cookbook too.</p>
+          <p>Hang tight, and you'll be able to share them very soon with our Simmer Version 2.0!</p>
+          <div style="display: flex; justify-content:center">
+             <a href="/login" style=" padding: 12px;font-size:20px; color:white; background-color:#c85204; margin:20px">Sign up here!</a>
+          </div>
+         
+        <br>
+        <hr/>
+         <div style="display: flex; align-items: center; "> 
+            <img src="/Assets/strawberryCheesecake.jpg" alt="" width="450" height="350" style="padding:30px">
+            <div style="display:flex; flex-direction:column">
+              <p style="font-size: 20px; font-weight:300;"> Find any type of dessert! From chocolate cake to matcha cookies. Search for whatever those tastebuds desire!</p>
+              <a href="/searchRecipes" style="font-size:20px; color:#c85204;">Search for dessert recipes >></a>
+            </div>
+          </div>
+           <div style="display: flex; align-items: center"> 
+            <img src="/Assets/nachos.jpg" alt="" width="500" height="350" style="padding:30px">
+           <div style="display:flex; flex-direction:column">
+              <p style="font-size: 20px; font-weight:300; "> Find any type of snack! From mouth-watering nachos to simple chia seed pudding. Search for whatever those tastebuds desire!</p>
+              <a href="/searchRecipes" style="font-size:20px; color:#c85204;">Search for tasty snacks >></a>
+            </div>
+          </div>
+           <div style="display: flex; align-items: center"> 
+            <img src="/Assets/tuscan-salmon-recipe.jpg" alt="" width="450" height="350" style="padding:30px">
+           <div style="display:flex; flex-direction:column">
+              <p style="font-size: 20px; font-weight:300;"> Find any type of dish! From tuscan salmon to honey-glazed chicken. Search for whatever those tastebuds desire!</p>
+              <a href="/searchRecipes" style="font-size:20px; color:#c85204;">Search for vegetarian dishes >></a>
+            </div>
+          </div>
+            <hr/>
+          <div>
+          <h3 style="font-weight: 200; font-size:50px; margin:50px 30px 30px 30px; text-align:center">Top Unique Dishes</h3>
+<br>
+          </div>
+          <div style="text-decoration:none;">
               {{#each recipes}}
-              <li>
+              <div>
                 <blockquote class="blockquote text-center">
-                    <p class="mb-0">{{name}}</p>
+                    <p class="mb-0" >{{name}}</p>
                     <footer class="blockquote-footer">{{User.username}}<!--USERNAME GOES HERE  --><cite title="Source Title"><!--LEAVE BLANK HERE  --></cite></footer>
                 </blockquote>
-              </li>
+              </div>
               {{/each}}
-
-          </ul>
+      <div style="display: flex; justify-content:center">
+             <a href="/login" style=" padding: 12px;font-size:20px; color:white; background-color:#c85204; margin:20px">Sign up here!</a>
+          </div>
+          </div>
         </div>
+        </div>
+       
+    </div>
     </div>
