@@ -7,7 +7,7 @@ This application is built to help individuals who are interested in cooking, fro
 ## Motivation
 
 
-the motivation behind this project is to assist people who are unsure what they wanna make, or have never tried to make a dish before, this applications acts as a tool to help solve that issue by giving you a wide variety of cusisines to try from. 
+The motivation behind this project is to assist people who are unsure what they wanna make, or have never tried to make a dish before, this applications acts as a tool to help solve that issue by giving you a wide variety of cusisines to try from. 
 
 ## How it Works
 
