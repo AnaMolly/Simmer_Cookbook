@@ -1,36 +1,43 @@
 
     <div>
-        <h1>My Personal Cookbook</h1>
-
-        <div class="container">
+        <h2 style='padding:1em; text-align:center'>My Cookbook</h2>   
+        <div class="container row" style="display: flex; align-content: space-between;">
             
+            
+             
         {{#each RecipeData as |Data|}}
             
-            <div class="row">
-                <div id='{{Data.name}}' class="col-sm allNames">
-               
-                    <h3 class="name">{{Data.name}}</h3>
+            <div class="col" style=>
+                
+                <div id='{{Data.name}}' class="col allNames row d-inline-flex p-2; text-align:center">
+                    <p class="name" style='font-size:1.5em; color:#c85204'>{{Data.name}}</p>
                 </div>
-                <div class="col-sm">
-                    <h3  class="ingredients" style="display: none;">{{Data.ingredients}}</h3>
-                    <h3  class="instructions"  style="display: none;">{{Data.instructions}}</h3>
-                    <img class="image" style="display: none;" src="{{Data.image}}">
+                
+                <div class="row justify-content-center" style='position:relative; top:4em'>
+                    <img class="image" height='300' width='400'style="display: none;" src="{{Data.image}}">
+                    <p  class="ingredients" style="display: none; font-size:1em"><span style='font-weight:bold; font-size:1.5em'>Ingredients:</span>{{Data.ingredients}}</p>
+                    <p  class="instructions"  style="display: none; font-size:1em"><span style='font-weight:bold; font-size:1.5em'>Instructions:</span>{{Data.instructions}}</p>
+                    
+
                     <div class="Delete" style="display: none;">
-                        <h2 id='{{Data.id}}' class="id">Delete</h2>
+    
+                        <button id='{{Data.id}}' class="id btn btn-primary" style="background-color: #c85204; padding:10px; margin:10px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size:20px; font-weight:200; border:none; color:#fff">Delete</button>
                     </div>
+
                     <div class="Update" style="display: none;">
-                        <a href="/editRecipe/{{Data.id}}">Update</a>
+                        <a href="/editRecipe/{{Data.id}}" class="btn btn-primary" style="background-color: #c85204; padding:10px; margin:10px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size:20px; font-weight:200; border:none">Update</a>
                     </div>
+
                 </div>
+
             </div>
         {{/each}}
+        <a href="/addReciepie" class="btn btn-primary" style="position:fixed; bottom:1em; background-color: #c85204; padding:10px; margin:10px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size:20px; font-weight:200; border:none">Add Recipe</a>
         </div>
 
         
         {{!--  change made here --}}
-
-
-        <a href="/addReciepie">Add Recepie</a>
+        
 
     </div>
 

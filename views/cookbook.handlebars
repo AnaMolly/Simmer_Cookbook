@@ -1,0 +1,14 @@
+<div style="display: flex; flex-direction:column; align-items: center; padding: 60px">
+    <p style="font-weight: 300; font-size: 30px; color:#c85204"> Please confirm your changes below.</p>
+    <br>
+    <p style="font-weight: 300; padding:0px 20px; font-size:30px; text-decoration:underline solid">PREVIEW:</p>
+    <p style="font-size: 50px;">{{fileData.name}}</p>
+    <h2>Ingredients:</h2>
+    <p style="font-size: 20px;">{{fileData.ingredients}}</p>
+    <h2>Instructions:</h2>
+    <p style="font-size: 20px;">{{fileData.instructions}}</p>
+    <img src={{file}} class="responsive-img" onerror="this.style.display='none'" style="max-height: 500px; max-width:500px; padding:30px">
+    <a href="/UserCookBook" class="finalSubmit" style="background-color:#c85204; padding:12px; font-size:25px; color:white; margin:15px">Confirm</a>
+</div>
+
+

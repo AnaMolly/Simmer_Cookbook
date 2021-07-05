@@ -74,12 +74,12 @@ function getIndRecipe(searchValue){
             `<h4 id='recipe-title' style='font-weight:200; font-size:40px; text-align:center; padding:30px'>${data.title}</h4> <img id="recipe-img"src='${data.image}' style='max-width:500px;max-height:500px'>`
         )
         
-        recipeInstructions.append(`<h3> Instructions: </h3>  <p id="recipe-instructions" style="padding: 0px 50px"> ${data.instructions}</p> <br>`)
-        recipeIngredients.append(`<h3> Ingredients: </h3>`)
+        recipeInstructions.append(`<h2> Instructions: </h2>  <p id="recipe-instructions" style="padding: 0px 30px"> ${data.instructions}</p> <br>`)
+        recipeIngredients.append(`<h2> Ingredients: </h2>`)
        
             for(let i=0;i<30;i++){
                 recipeIngredients.append(
-                    `  <p class="recipe-ingredients" style="font-size: 20px">${data.extendedIngredients[i].original}</p>`
+                    `  <p class="recipe-ingredients" style="font-size: 25px">${data.extendedIngredients[i].original}</p>`
                 )
             } 
 
