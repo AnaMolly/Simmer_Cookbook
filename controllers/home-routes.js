@@ -81,7 +81,7 @@ router.get('/UserCookBook', withAuth, async(req,res) =>{
           }
         });
      
-        res.render('DisplayUserCookbook',{RecipeData})
+        res.render('DisplayUserCookbook',{RecipeData, loggedIn: req.session.loggedIn})
     } 
       
       catch (err) {
