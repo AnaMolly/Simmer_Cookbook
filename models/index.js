@@ -1,6 +1,6 @@
-const User = require('./User.js');
-const Recipe = require('./Recipe.js');
-const Cookbook = require('./Cookbook.js');
+const User = require('./user');
+const Recipe = require('./recipe');
+const Cookbook = require('./cookbook');
 
 // SET UP RELATIONSHIPS BETWEEN MODELS
 User.hasMany(Recipe, {
