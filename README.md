@@ -25,6 +25,9 @@ This application works through a login system, user signs into the application, 
 * CSS
 * JavaScript
 * MySQL
+* Sequelize
+* Node.js
+* Express
 
 
 ## Links

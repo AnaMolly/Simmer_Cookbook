@@ -1,11 +1,14 @@
 
     <div>
         <h1>My Personal Cookbook</h1>
+
         <div class="container">
             
-      {{#each RecipeData as |Data|}}
+        {{#each RecipeData as |Data|}}
+            
             <div class="row">
                 <div id='{{Data.name}}' class="col-sm allNames">
+               
                     <h3 class="name">{{Data.name}}</h3>
                 </div>
                 <div class="col-sm">
@@ -23,11 +26,17 @@
         {{/each}}
         </div>
 
-    </div>
         
-        <a href="/addReciepie">Add Recipe</a>
+        {{!--  change made here --}}
 
-    </body>
+
+        <a href="/addReciepie">Add Recepie</a>
+
+    </div>
+
+
+
+
 
 
 <script rel="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
