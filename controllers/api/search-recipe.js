@@ -1,7 +1,8 @@
 const router = require('express').Router();
 const { Recipe } = require('../../models');
+const withAuth = require('../../utils/auth');
 
-router.post('/searchRecipe', async (req, res) => {
+router.post('/searchRecipe', withAuth, async (req, res) => {
     console.log(req.body)
     console.log(req.session.user_id)
   try {
