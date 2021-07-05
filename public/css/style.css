@@ -21,6 +21,13 @@ nav a  {
     padding:22px;
     letter-spacing: 1.5px;
 }
+
+#navbar-container a:hover{
+    text-decoration: none;
+    color: white ;
+    background-color: #073B3A;
+}
+
 input {
     width: 400px;
     padding: 0 20px;
@@ -67,12 +74,13 @@ input::-webkit-input-placeholder {
     border:none;
     background-color: #c85204;
 }
+#logout:hover{
+    background-color: #073B3A;
+}
 
-#app-title {
-    font-size: 10em;
-    margin-top: 0.25em;
-    font-family: 'Caveat', cursive;
-    color: orangered;
+.recipes:hover{
+    cursor: pointer;
+    box-shadow: 1px 1px 16px 8px rgba(223,123,57,0.5);
 }
 
 .blockquote-footer {
@@ -82,3 +90,4 @@ input::-webkit-input-placeholder {
 .mb-0 {
     font-size: xx-large;
 }
+
