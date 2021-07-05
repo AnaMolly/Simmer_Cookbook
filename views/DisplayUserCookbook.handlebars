@@ -3,17 +3,21 @@
         <h1>My personal Cookbook</h1>
         <div class="container">
             
-        {{#each RecipeData as |Data|}}
-            
+      {{#each RecipeData as |Data|}}
             <div class="row">
                 <div id='{{Data.name}}' class="col-sm allNames">
-               
                     <h3 class="name">{{Data.name}}</h3>
                 </div>
                 <div class="col-sm">
                     <h3  class="ingredients" style="display: none;">{{Data.ingredients}}</h3>
                     <h3  class="instructions"  style="display: none;">{{Data.instructions}}</h3>
-                    <img  class="image" style="display: none;" src="{{Data.image}}">
+                    <img class="image" style="display: none;" src="{{Data.image}}">
+                    <div class="Delete" style="display: none;">
+                        <h2 id='{{Data.id}}' class="id">Delete</h2>
+                    </div>
+                    <div class="Update" style="display: none;">
+                        <a href="/editRecipe/{{Data.id}}">Update</a>
+                    </div>
                 </div>
             </div>
         {{/each}}
@@ -21,12 +25,9 @@
 
     </div>
         
-        <a href="/addReciepie">Add Recepie</a>
+        <a href="/addReciepie">Add Recipe</a>
 
     </body>
-</html>
-
-
 
 
 <script rel="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

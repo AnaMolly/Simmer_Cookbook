@@ -10,6 +10,8 @@
   const multer = require('multer');
   const app = express();
   const PORT = process.env.PORT || 3001;
+
+
   const sess = {
     secret: 'Super secret secret',
     cookie: {},
@@ -19,13 +21,16 @@
       db: sequelize
     })
   };
+
   app.use(session(sess));
+
   const storage = multer.diskStorage({
     destination: './public/uploads/',
     filename: function(req, file, cb){
       cb(null,file.originalname);
     }
   });
+
   const upload = multer({
     storage: storage,
   }).single('myImage');
@@ -40,12 +45,12 @@
           name:req.body.name,
           ingredients:req.body.ingredients,
           instructions:req.body.instructions,
-          image:file
-
+          image:file,
+          user_id:req.session.user_id
         });
         console.log(req.body);
         console.log(req.file.filename);
-        res.render('CookBook',{ 
+        res.render('cookbook',{ 
           fileData:req.body,
           file: `uploads/${req.file.filename}`
         })
@@ -88,7 +93,7 @@
       )
 
       if(fileChanged === true){
-        res.render('CookBook',{ 
+        res.render('cookbook',{ 
           fileData:req.body,
           file: `uploads/${req.file.filename}`
         })
@@ -97,7 +102,7 @@
       else{
         console.log("late night codin");
         console.log("file1" + file1);
-        res.render('CookBook',{ 
+        res.render('cookbook',{ 
           fileData:req.body,
           file: file1
         })
@@ -107,11 +112,6 @@
     })
 
   })
-
-
-
-  
-
 
   // made this change
   app.engine("handlebars",exphbs({
