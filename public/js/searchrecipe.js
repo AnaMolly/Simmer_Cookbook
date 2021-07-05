@@ -90,6 +90,8 @@ function getIndRecipe(searchValue){
 }
     
 const addRecipeData = async () => { 
+
+    console.log("this thing ");
     
     const name = $('#recipe-title').text()
     const ingredients = $('.recipe-ingredients')
@@ -101,7 +103,7 @@ const addRecipeData = async () => {
 
     
     if (name && ingredient && instructions && image) {
-        console.log(ingredient)
+        
       const response = await fetch('/api/recipes/searchRecipe', {
         method: 'POST',
         body: JSON.stringify({name, ingredient, instructions,image}),
@@ -109,14 +111,16 @@ const addRecipeData = async () => {
       });
   
       if (response.ok) {
-        document.location.replace('/DisplayUserCookbook');
+        document.location.replace('/UserCookBook');
       } else {
         alert(response.statusText);
       }
     }
 };
 
+
 addBut.addEventListener("click", function(event){
+    console.log("this is here like this")
     event.preventDefault()
     addRecipeData()
 })
@@ -127,5 +131,4 @@ searchBut.addEventListener("click", function(event){
     recipesListEl.children().remove()
     getRecipes()
 })
-
 
