@@ -3,11 +3,7 @@ body{
     font-weight: 200;
 }
 
-h3 {
-    color: #073B3A;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
-}
 nav{
     color: #c85204;
     display: flex;
@@ -38,6 +34,12 @@ input,
 input::-webkit-input-placeholder {
     font-size: 20px;
     line-height: 3;
+}
+
+.homepage-title h3 {
+    color: #073B3A;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
 }
 
 .recipes-home p{
@@ -91,3 +93,51 @@ input::-webkit-input-placeholder {
     font-size: xx-large;
 }
 
+h1{
+    color: #c85204;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+
+}
+
+h3{
+    color: #f3f3f3;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+textarea{
+    margin:5px;
+    margin-top: 4%;
+    margin-left: 25%;
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #069e9c;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+textarea:hover{
+    border-color: white;
+}
+.btn{
+    margin:5px;
+    margin-top: 4%;
+    margin-left: 25%;
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #069e9c;
+
+}
+.btn:hover{
+    border-color:white;
+}
+.file-path-wrapper{
+    margin:5px;
+    margin-top: 4%;
+    margin-left: 25%;
+    padding: 5px;
+    width: 300px;
+}
