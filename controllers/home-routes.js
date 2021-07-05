@@ -1,11 +1,12 @@
 const router = require('express').Router();
 const {Recipe,User}=require('../models')
+const withAuth = require('../utils/auth');
 
-router.get('/addReciepie', async(req,res) =>{
+router.get('/addReciepie', withAuth, async(req,res) =>{
     res.render('RecepieAdd');
 })
 
-router.get('/ViewRecepie', async(req,res) =>{
+router.get('/ViewRecepie', withAuth, async(req,res) =>{
     res.render('CookBook');
 })
 
@@ -30,7 +31,7 @@ router.get('/', async (req, res) => {
   }
 });
 
-router.get('/searchRecipes', async (req, res) => {
+router.get('/searchRecipes', withAuth, async (req, res) => {
   try {
 
     res.render('searchRecipe',{
@@ -61,7 +62,7 @@ router.get('/logout', (req, res) => {
 });
 
 
-router.get('/DisplayUserCookbook', async (req, res) => {
+router.get('/DisplayUserCookbook', withAuth, async (req, res) => {
   try {
 
     res.render('DisplayUserCookbook',{
@@ -71,7 +72,7 @@ router.get('/DisplayUserCookbook', async (req, res) => {
   }
 });
 
-router.get('/UserCookBook', async(req,res) =>{
+router.get('/UserCookBook', withAuth, async(req,res) =>{
     try {
         const RecipeData = await Recipe.findAll({
           // Add Book as a second model to JOIN with

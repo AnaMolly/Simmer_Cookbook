@@ -21,6 +21,17 @@ nav a  {
     padding:22px;
     letter-spacing: 1.5px;
 }
+input {
+    width: 400px;
+    padding: 0 20px;
+    font-size: 20px;
+}
+
+input,
+input::-webkit-input-placeholder {
+    font-size: 20px;
+    line-height: 3;
+}
 
 .recipes-home p{
     font-size: 25px;
@@ -47,6 +58,15 @@ nav a  {
     padding: 5em;
 }
 
+#logout {
+    color:white;
+    font-size: 22px;
+    font-weight: 200;
+    padding:22px;
+    letter-spacing: 1.5px;
+    border:none;
+    background-color: #c85204;
+}
 
 #app-title {
     font-size: 10em;

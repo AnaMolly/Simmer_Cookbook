@@ -1,8 +1,9 @@
 const router = require('express').Router();
 const {Recipe} = require('../../models');
+const withAuth = require('../../utils/auth');
 
 
-router.delete('/:id', async (req, res) => {
+router.delete('/:id', withAuth, async (req, res) => {
     try {
       const recipetData = await Recipe.destroy({
         where: {
