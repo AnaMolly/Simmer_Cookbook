@@ -14,11 +14,15 @@ router.get('/', async (req, res) => {
   try {
 
     const recipeData = await Recipe.findAll({
-      include:{model:User}
+      include:[User],
+     where:{
+       user_id:1
+     }
+
     })
 
     const recipes = recipeData.map(recipe =>recipe.get({plain:true}))
-    
+    console.log(recipes)
     res.render('homepage',{recipes,
     loggedIn: req.session.loggedIn});
   } catch (err) {
@@ -75,14 +79,8 @@ router.get('/UserCookBook', async(req,res) =>{
             user_id:req.session.user_id
           }
         });
-
-        // const addRecepieData = RecipeData.map((data) =>
-        // data.get({ plain: true })
-  
-        // );
      
         res.render('DisplayUserCookbook',{RecipeData})
-        // res.status(200).json(productData);
     } 
       
       catch (err) {
