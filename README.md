@@ -47,6 +47,12 @@ This application works through a login system, user signs into the application, 
 The animation below displays the appearance and functionality of the application.
 
 ## Screenshot
+![homepage](https://user-images.githubusercontent.com/83045173/124648135-dcf3e780-de64-11eb-8f9c-11bde4a49baa.png)
+![loginpage](https://user-images.githubusercontent.com/83045173/124648195-f7c65c00-de64-11eb-9757-9176518a9878.png)
+![searchrecpie](https://user-images.githubusercontent.com/83045173/124648231-057be180-de65-11eb-9f16-f7cea0b4d8aa.png)
+![cookbookpage](https://user-images.githubusercontent.com/83045173/124648257-0f9de000-de65-11eb-9601-46600b4fe5cb.png)
+![editrecipe](https://user-images.githubusercontent.com/83045173/124648287-19bfde80-de65-11eb-95a5-e7fcdd7529e7.png)
+![addrecipe](https://user-images.githubusercontent.com/83045173/124648342-26443700-de65-11eb-91be-6a4a6640a751.png)
 
 
 ## Contributors
