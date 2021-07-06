@@ -32,8 +32,8 @@ This application works through a login system, user signs into the application, 
 
 ## Links
 
-* Github repo: 
-* Deployed site:
+* Github repo: https://github.com/AnaMolly/Simmer_Cookbook
+* Deployed site: https://simmer-cookbook.herokuapp.com/
 
 
 ## User Story
