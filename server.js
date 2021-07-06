@@ -8,6 +8,7 @@
   const sequelize = require('./config/connection');
   const SequelizeStore = require('connect-session-sequelize')(session.Store);
   const multer = require('multer');
+const { REFUSED } = require('dns');
   const app = express();
   const PORT = process.env.PORT || 3001;
 
@@ -41,6 +42,8 @@
         
        upload(req,res,async(err) =>{
         const file=`uploads/${req.file.filename}`
+        console.log(req.body.name)
+        console.log("hello")
         await Recipe.create({
           name:req.body.name,
           ingredients:req.body.ingredients,
