@@ -2,17 +2,15 @@
 
 ## Overview
 
-This application is built to help individuals who are interested in cooking, from new beginners chefs to professional chefs this application is desgined to share your recipes, search for other user recipes. This project solves the problem to trying to find good recipes to make and share with others, e.g., search for recipes, save favourite recipes, and share your favortie with others. An application that puts the fun in cooking. 
+Simmer Cookbook is an application that was built to help individuals who are interested in cooking or are current cooks. This application enables the user to create thier own virtual cookbook, one that will be customized to include their favourite recipes. The user can search for recipes or add their own recipes to the cookbook. They can also update these recipes or delete them if they are no longer needed. This application solves the problem of having to resort to different resources to find your favourite recipes, as your cookbook will have your favourite recipes in one spot. 
 
 ## Motivation
 
-
-The motivation behind this project is to assist people who are unsure what they wanna make, or have never tried to make a dish before, this applications acts as a tool to help solve that issue by giving you a wide variety of cusisines to try from. 
+The motivation behind this project is to assist the user in storing and organizing their favourite recipes, or new recipes they are planning on making.
 
 ## How it Works
 
-This application works through a login system, user signs into the application, where they are able to search for recipes, add recipes to their cookbook, share recipes they have created. Search bar allows you to search for any cusisine. It uses an API to fetch the data which is converted into JSON format and then the relevant information is displayed in a format that the user can understand.
-
+The user can initially sign up for the application, and can login afterwards. Once the user is signed in, they can search for recipes (via the recipe API) and add them to their cookbook. They can also create personal recipes and add them to their cookbook. The user is also able to update and delete recipes added to their cookbook.
 
 ## APIs Used
 
@@ -21,13 +19,17 @@ This application works through a login system, user signs into the application, 
 ## Langages and Libraries Implemented
 
 * HTML5
-* HANDLEBARS
 * CSS
-* JavaScript
+* Bootstrap
+* Handlebars.js
 * MySQL
 * Sequelize
 * Node.js
 * Express
+* Express-Sessions
+* jQuery
+* Mutler
+* Bcrypt
 
 
 ## Links
