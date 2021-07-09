@@ -2,7 +2,7 @@
 
 ## Overview
 
-Simmer Cookbook is an application that was built to help individuals who are interested in cooking or are current cooks. This application enables the user to create thier own virtual cookbook, one that will be customized to include their favourite recipes. The user can search for recipes or add their own recipes to the cookbook. They can also update these recipes or delete them if they are no longer needed. This application solves the problem of having to resort to different resources to find your favourite recipes, as your cookbook will have your favourite recipes in one spot. 
+Simmer Cookbook is an application assists those who are interested in cooking or are current cooks. This application enables the user to create thier own virtual cookbook, one that will be customized to include their favourite recipes. The user can search for recipes or add their own recipes to the cookbook. They can also update these recipes or delete them if they are no longer needed. This application solves the problem of having to resort to different resources to find your favourite recipes, as your cookbook will have your favourite recipes in one spot. 
 
 ## Motivation
 
