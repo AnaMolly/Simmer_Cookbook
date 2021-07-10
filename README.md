@@ -59,7 +59,25 @@ The animation below displays the appearance and functionality of the application
 
 ## Contributors
 
-Abuzar Cheema, Analia Mohamdally, Ahmad Mujeeb, Jugraj Nijjar
+Contributors to this project includes:
+Analia Mohamdally, Ahmad Mujeeb, Jugraj Nijjar, Abuzar Cheema.
+
+If you would like to contribute to this project, please feel free to reach out to one of us. Our contact information can be found below.
 
 
+## Contact Information
+Analia: 
+- GitHub: https://github.com/AnaMolly
+- Email: analia.mohamdally@gmail.com
+
+Ahmad: 
+- GitHub: https://github.com/ahmadmujeeb33
+- Email: ahmadmujeeb333@gmail.com
+
+Jugraj:
+- Github: https://github.com/jugrajn
+- Email: jugraj.nijjar@gmail.com
+
+Abuzar:
+- Github:https://github.com/Abuzar2210 
 
