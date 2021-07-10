@@ -12,16 +12,11 @@ https://simmer-cookbook.herokuapp.com/
 
 The motivation behind this project is to assist the user in storing and organizing their favourite recipes, or new recipes they are planning on making.
 
-## How it Works
-
-The user can initially sign up for the application, and can login afterwards. Once the user is signed in, they can search for recipes (via the recipe API) and add them to their cookbook. They can also create personal recipes and add them to their cookbook. The user is also able to update and delete recipes added to their cookbook.
-
 ## APIs Used
 
 * Spoonful API
 
-## Langages and Libraries Implemented
-
+## Technologies used:
 * HTML5
 * CSS
 * Bootstrap
@@ -42,11 +37,10 @@ The user can initially sign up for the application, and can login afterwards. On
 * I WANT to be able to search for recipes, save and share different recipes 
 * SO THAT I can select from a variety of cuisine to make from and enjoy.
 
-## Mockup
+## Usage
 
-The animation below displays the appearance and functionality of the application.
+The user can initially sign up for an account, and can login afterwards. Once the user is signed in, they can search for recipes (via the recipe API) and add them to their cookbook. They can also create personal recipes and add them to their cookbook. The user is also able to update and delete recipes that they've previously added to their cookbook.
 
-## Screenshot
 ![homepageSnip](https://user-images.githubusercontent.com/83045173/124649248-3dcfef80-de66-11eb-9ca3-fa9da5417834.PNG)
 ![loginpage](https://user-images.githubusercontent.com/83045173/124648195-f7c65c00-de64-11eb-9757-9176518a9878.png)
 ![screencapture-simmer-cookbook-herokuapp-searchRecipes-2021-07-06-14_27_16](https://user-images.githubusercontent.com/83045173/124649374-65bf5300-de66-11eb-80e8-1c90e9c5a10a.png)
